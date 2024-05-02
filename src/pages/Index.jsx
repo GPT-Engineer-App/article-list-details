@@ -10,6 +10,7 @@ const articles = [
     source: "Nature Energy",
     content: "Renewable energy is set to transform how we produce and consume energy, reducing our carbon footprint and promoting sustainability.",
     relatedArticles: [2, 3],
+    viewCount: 150,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const articles = [
     source: "TechCrunch",
     content: "AI and machine learning continue to evolve, pushing the boundaries of what machines can learn and do.",
     relatedArticles: [1, 3],
+    viewCount: 200,
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const articles = [
     source: "Economic Times",
     content: "Climate change poses significant risks to global economies, influencing policy decisions and corporate strategies.",
     relatedArticles: [1, 2],
+    viewCount: 175,
   },
 ];
 
@@ -42,6 +45,9 @@ const ArticleList = ({ onSelectArticle }) => {
               </LinkOverlay>
             </Heading>
             <Text fontSize="sm">Source: {article.source}</Text>
+            <Text fontSize="sm" color="gray.500">
+              Views: {article.viewCount}
+            </Text>
           </Flex>
         </LinkBox>
       ))}
