@@ -10,7 +10,6 @@ const articles = [
     source: "Nature Energy",
     content: "Renewable energy is set to transform how we produce and consume energy, reducing our carbon footprint and promoting sustainability.",
     relatedArticles: [2, 3],
-    views: 0,
   },
   {
     id: 2,
@@ -19,7 +18,6 @@ const articles = [
     source: "TechCrunch",
     content: "AI and machine learning continue to evolve, pushing the boundaries of what machines can learn and do.",
     relatedArticles: [1, 3],
-    views: 0,
   },
   {
     id: 3,
@@ -28,7 +26,6 @@ const articles = [
     source: "Economic Times",
     content: "Climate change poses significant risks to global economies, influencing policy decisions and corporate strategies.",
     relatedArticles: [1, 2],
-    views: 0,
   },
 ];
 
@@ -39,11 +36,7 @@ const ArticleList = ({ onSelectArticle }) => {
         <LinkBox as="article" key={article.id} p={5} borderWidth="1px" rounded="md">
           <Flex direction="column" align="start">
             <Image src={article.image} alt={article.headline} borderRadius="md" />
-            <Heading size="md" my="2" display="flex" justifyContent="space-between" alignItems="center">
-              <span>{article.headline}</span>
-              <Text fontSize="sm" color="gray.500">
-                Views: {article.views}
-              </Text>
+            <Heading size="md" my="2">
               <LinkOverlay href="#" onClick={() => onSelectArticle(article)}>
                 {article.headline}
               </LinkOverlay>
