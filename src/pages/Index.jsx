@@ -5,7 +5,7 @@ import { useState } from "react";
 const articles = [
   {
     id: 1,
-    headline: "Exploring the Future of Renewable Energy",
+    headline: "Exploring the Future of Nuclear Energy",
     image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxyZW5ld2FibGUlMjBlbmVyZ3l8ZW58MHx8fHwxNzE0NjQ1NzExfDA&ixlib=rb-4.0.3&q=80&w=1080",
     source: "Nature Energy",
     content: "Renewable energy is set to transform how we produce and consume energy, reducing our carbon footprint and promoting sustainability.",
